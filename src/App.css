@@ -1,0 +1,191 @@
+:root{
+  --azul: #10555e;
+  --cinza: #ECF1FE;
+  --branco: #fff;
+  --amarelo: #F2D096;
+  --fonte: 'Montserrat', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  zoom: .9;
+}
+
+body{
+  font-family: var(--fonte);
+  background-color: var(--cinza);
+  background-image:url(../src/assets/bg-texture.png);
+}
+
+header{
+  background-color: var(--azul);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-vb{
+  height: 55px;
+  width: 55px;
+}
+
+.logo-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icones-header{
+  border-radius: 20px;
+  padding: 0.6rem;
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.icon_header{
+  height: 35px;
+  width: 35px;
+  color:var(--branco);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.saldo{
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--branco);
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.saldo-disponivel{
+  padding: 50px;
+  margin-right: 80px;    
+}
+
+.agendado{
+  margin-right: 40px;
+}
+
+.num{
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: var(--azul);
+  font-weight: bolder;
+}
+
+.itens1{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem;
+}
+
+.item1{
+  width: 45px;
+  height: 45px;
+  background-color: var(--branco);
+  color: var(--azul);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.item1:hover{
+  opacity: .6;
+  transition: 0.35s;
+}
+
+.pix-esc{
+  margin-left: 35px;
+}
+
+.extrato-esc{
+  margin-left: 20px;
+}
+
+.seguro-esc{
+  margin-left: 20px;
+}
+
+@media(max-width: 1200px){
+  header{
+    justify-content: space-between;
+  }
+
+  .ola{
+    font-size: 1.4em;
+  }
+
+  .image-vb{
+    height: 45px;
+    width: 45px;
+  }
+
+  .icones-header{
+    gap: 1rem;
+  }
+
+  .icon_header{
+    height: 25px;
+    width: 25px;
+  }
+
+  .num{
+    font-size: 1em;
+  }
+
+  h2{
+    font-size: 1.1em;
+  }
+
+  .saldo{
+    width: 90%;
+  }
+
+  .saldo-disponivel{
+    margin-left: 70px;
+    padding: 20px;
+  }
+
+  .agendado{
+    margin-right: 95px;
+  }
+
+  .itens1{
+    padding: 2rem 0;
+  }
+
+  .item1{
+    width: 35px;
+    height: 30px;
+    padding: 20px;
+  }
+
+  h3{
+    font-size: 0.8em;
+  }
+
+  .cons{
+    margin-left: 15px;
+  }
+
+  .trans{
+    margin-left: 8px;
+  }
+}
